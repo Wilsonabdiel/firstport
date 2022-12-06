@@ -1,0 +1,264 @@
+.first{
+    
+    height: 100vh;
+    /* width: 100vw; */
+    /* background-color: #34434e; */
+}
+.mainpage{
+    padding-top: 5vh;
+    padding-left: 50vh;
+    padding-right: 50vh;
+    text-align: center;
+   
+}
+
+.intro{
+    height: 80vh;
+}
+.intro h1{
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+}
+.intro h2{
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+}
+
+.intro p{
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+
+}
+.clang{
+    font-size: 5px;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.8;
+}
+.subparent{
+    display: none;
+}
+/* .second{
+    
+    background-color: #1abc9c;
+
+    height: 30vh;
+    width: 40vh;
+
+} */
+/* .metext{
+    font-size: 2em;
+} */
+nav{
+    margin: 27px auto 0;
+    position: relative;
+    width: 590px;
+    height: 50px;
+    border-radius: 8px;
+    /* font-size: 0; */
+    background-color: #34434e;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size:15px;
+    line-height: 50px;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    
+}
+nav .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+a:nth-child(1){
+    width: 100px;
+}
+
+a:nth-child(2){
+    width: 110px;
+}
+
+a:nth-child(3){
+    width: 100px;
+}
+
+a:nth-child(4){
+    width: 160px;
+}
+
+/* a:nth-child(5){
+    width: 120px;
+} */
+nav .start-home, a:nth-child(1):hover~.animation{
+    width: 110px;
+    left:0;
+    background-color: #1abc9c;
+}
+nav .start-skills, a:nth-child(2):hover~.animation{
+    width: 110px;
+    left:100px;
+    background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation{
+    width: 100px;
+    left:210px;
+    background-color: #3498db;
+}
+nav .start-projects, a:nth-child(4):hover~.animation{
+    width: 160px;
+    left:310px;
+    background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation{
+    width: 120px;
+    left:470px;
+    background-color: #e67e22;
+}
+body{
+    font-size: 12px;
+    font-family: sans-serif;
+    background: #2c3e50;
+}
+span{
+    color:#2BD6B4;
+}
+body{
+	background-color: #34434e;
+    color: rgb(173, 184, 174);
+}
+
+
+.contact-box{
+	max-width: 100%;
+	/* display: grid; */
+    border-radius: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	/* justify-content: center;
+	align-items: center;
+	text-align: center; */
+	/* background-color: #727387; */
+    transition: 0.5s;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+}
+
+.contact-box:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+}
+
+
+
+.left{
+	/* background: url("telephone1.jpg") no-repeat center; TODO: add some image */
+	background-size: cover;
+	height: 100%;
+    border-radius: 10px;
+
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    /* background-color: #25a888; */
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.835);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 40%;
+	padding: 0.5rem 1rem;
+	background-color: #526e67;
+    border-radius: 3px;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.15);
+}
+
+.field:focus{
+    background-color: #fff;
+}
+/* 
+@media screen and (max-width: 768px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+} */
+/* Cursor styles */
+
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.15);
+}
+  
+  .cursor--small {
+    width: 5px;
+    height: 5px;
+    left: -2.5px;
+    top: -2.5px;
+    border-radius: 50%;
+    z-index: 11000;
+    background: black;
+  }
+  .cursor--canvas {
+    width: 100vw;
+    height: 100vh;
+    z-index: 12000;
+  }
