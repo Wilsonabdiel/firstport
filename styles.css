@@ -72,7 +72,6 @@ nav a{
     z-index: 1;
     text-align: center;
 
-    
 }
 nav .animation{
     position: absolute;
@@ -220,6 +219,7 @@ textarea{
 	outline: none;
 	cursor: pointer;
 	transition: .3s;
+    text-decoration: none;
 }
 
 .btn:hover{
